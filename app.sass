@@ -1,0 +1,34 @@
+@import scheduler/scheduler.sass
+@import garden/garden.sass
+@import plants/plants.sass
+@import users/users.sass
+@import bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap.scss
+@import bower_components/font-awesome/scss/font-awesome.scss
+@fa-font-path: bower_components/font-awesome/fonts
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel a
+  cursor: pointer
+
+/* Personal preference for BS modal.  The LESS below makes the backdrop white and
+   causes the modal to fade in rather than slide in. */
+//@modal-backdrop-bg: white;
+//.modal {
+//    &.fade {
+//        .transition(opacity .3s);
+//    }
+//    &.fade .modal-dialog {
+//        .translate(0,0);
+//    }
+//}
+html,
+body
+  width: 100%
+  height: 100%
+
+.page-content
+  width: 100%
+  height: 100%
+  max-width: 800px
+  margin: auto
+  

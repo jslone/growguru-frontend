@@ -1,0 +1,50 @@
+{
+  "generator-hxw-angular": {
+    "coffee": true,
+    "uirouter": true,
+    "partialDirectory": "partial/",
+    "directiveDirectory": "directive/",
+    "filterDirectory": "filter/",
+    "serviceDirectory": "service/",
+    "inject": {
+      "coffee": {
+        "file": "index.html",
+        "marker": "<!-- Add New Component JS Above -->",
+        "template": "<script src=\"<%= compiledFilename %>\" data-appjs=\"true\"></script>"
+      },
+      "js": {
+        "file": "index.html",
+        "marker": "<!-- Add New Component JS Above -->",
+        "template": "<script src=\"<%= filename %>\"></script>"
+      },
+      "sass": {
+        "relativeToModule": true,
+        "file": "<%= module %>.sass",
+        "marker": "/* Add Component LESS Above */",
+        "template": "@import <%= filename %>"
+      }
+    },
+    "modules": [
+      {
+        "name": "users",
+        "file": "users/users.coffee"
+      },
+      {
+        "name": "users",
+        "file": "users/users.coffee"
+      },
+      {
+        "name": "plants",
+        "file": "plants/plants.coffee"
+      },
+      {
+        "name": "garden",
+        "file": "garden/garden.coffee"
+      },
+      {
+        "name": "scheduler",
+        "file": "scheduler/scheduler.coffee"
+      }
+    ]
+  }
+}
