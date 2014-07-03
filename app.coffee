@@ -3,7 +3,7 @@ angular.module 'growguru',        ['ui.bootstrap', 'ui.utils', 'ui.router', 'ngA
 angular.module('growguru').config ($stateProvider, $urlRouterProvider) ->
 
   ## Add New States Above
-  $urlRouterProvider.otherwise '/'
+  $urlRouterProvider.otherwise '/users/auth'
 
 
 angular.module('growguru').run ($rootScope) ->

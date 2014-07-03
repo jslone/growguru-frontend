@@ -4,7 +4,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link href="app.less" type="text/css" rel="stylesheet/less">
+    <link href="app.sass" type="text/css" rel="stylesheet/sass">
   </head>
   <body>
 
@@ -12,9 +12,8 @@
     <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
 
     <!-- JS from Bower Components -->
-    <script src="bower_components/less.js/dist/less-1.6.2.js" data-concat="false"></script>
     <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bootstrap-sass-twbs/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/moment/moment.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -34,8 +33,10 @@
     <script src="garden/directive/grid/grid.js" data-appjs="true"></script>
     <script src="plants/directive/plant/plant.js" data-appjs="true"></script>
     <script src="scheduler/scheduler.js" data-appjs="true"></script>
+    <script src="users/partial/auth/auth.js" data-appjs="true"></script>
     <!-- Add New Component JS Above -->
-
+    
+    <div class="background"></div>
     <div class="page-content" data-ui-view=""></div>
 
   </body>

@@ -50,6 +50,12 @@ module.exports = (grunt) ->
           hostname: 'localhost'
           livereload: 35729
           base: ['.']
+      dist:
+        options:
+          port: 8000
+          hostname: 'localhost'
+          base: ['dist']
+          keepalive: true
 
     watch:
       main:
@@ -242,6 +248,11 @@ module.exports = (grunt) ->
     'htmlmin'
     'imagemin'
     'clean:after'
+  ]
+  
+  grunt.registerTask 'buildt', [
+    'build'
+    'connect:dist'
   ]
 
   grunt.registerTask 'serve', [
